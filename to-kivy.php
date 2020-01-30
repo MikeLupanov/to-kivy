@@ -3,10 +3,10 @@
 # License: CC0 1.0
 
 $host        = "kivy.org"; # translated host
-$host_scheme = "http";          # protocol type: "http" or "https"
+$host_scheme = "https";          # protocol type: "http" or "https"
 
 # banning bots
-if (strpos($_SERVER['HTTP_USER_AGENT'], 'http://')) die();
+if (strpos($_SERVER['HTTP_USER_AGENT'], 'https://')) die();
 
 # decode name of subdomain
 $proxy_host = $_SERVER['DEFAULT_VERSION_HOSTNAME'];
